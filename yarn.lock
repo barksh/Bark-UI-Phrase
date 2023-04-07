@@ -572,6 +572,11 @@
   dependencies:
     "@sudoo/jwt-config" latest
 
+"@sudoo/locale@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@sudoo/locale/-/locale-1.0.1.tgz#1058bd40ae5a8a8a948569e4c0fc99f06e7e6ada"
+  integrity sha512-QXJ46aVm3KwqmGUY7eOBN1qGLprj7fGzu87tjcsrI2jB/d9L3pEzi+Ar27FXf8GXbO0V5mNaYa8na04wMzMZIg==
+
 "@sudoo/magic@^1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@sudoo/magic/-/magic-1.9.0.tgz#8ba9485604d85c6f88dd891d393e3bb4bc508355"
