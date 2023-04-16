@@ -4,12 +4,13 @@
  * @description Phrases
  */
 
-import { Button, Card, CenteredLayout, NavigationLayout, SpinnerRectangle } from "@barksh/bark-design-react";
+import { AppBar, Button, Card, CenteredLayout, NavigationLayout, SpinnerRectangle } from "@barksh/bark-design-react";
 import { useAuthenticationToken } from "@barksh/client-authentication-react";
 import * as React from "react";
 import { HiOutlineLogout } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import { barkClient } from "../../util/bark-client";
+import { PhrasesMenuView } from "./menu";
 
 export const PhrasesView: React.FC = () => {
 
@@ -26,8 +27,11 @@ export const PhrasesView: React.FC = () => {
     }
 
     return (<NavigationLayout
-        navigation="test"
+        navigation={<PhrasesMenuView />}
     >
+        <AppBar
+            title="Phrases"
+        />
         <Card
             headerTitle={`Hello, ${authenticationToken.token.getAccountIdentifier()}`}
             minWidth="min(512px, 100vw)"
