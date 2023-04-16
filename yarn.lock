@@ -247,6 +247,11 @@
     "@sudoo/url" "^1.6.1"
     connor "^2.8.0"
 
+"@barksh/client-authentication-react@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@barksh/client-authentication-react/-/client-authentication-react-1.0.0.tgz#2a482acd8f2cef4f74eec9d89ea1ad84212d9455"
+  integrity sha512-wD4y263tF699K52y+HloUq0FX21VFWTXS9gW2SimeTjbjJzHztXW+WEdjQjGnu2/CTQrarzx2POMI4/AONY0BA==
+
 "@barksh/dns-resolver@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@barksh/dns-resolver/-/dns-resolver-1.0.1.tgz#0b4e6e1baf22567fb872f9394cef675c7c2f675f"

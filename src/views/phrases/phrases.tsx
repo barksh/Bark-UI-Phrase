@@ -4,8 +4,8 @@
  * @description Phrases
  */
 
-import { Button, Card } from "@barksh/bark-design-react";
-import { BarkAuthenticationToken, BarkRefreshToken } from "@barksh/token-browser";
+import { Button, Card, CenteredLayout, SpinnerRectangle } from "@barksh/bark-design-react";
+import { useAuthenticationToken } from "@barksh/client-authentication-react";
 import * as React from "react";
 import { HiOutlineLogout } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
@@ -14,53 +14,36 @@ import { PhrasesContainer } from "./styles/container";
 
 export const PhrasesView: React.FC = () => {
 
-    const [authenticationToken, setAuthenticationToken] = React.useState<BarkAuthenticationToken | null>(null);
-    const [refreshToken, setRefreshToken] = React.useState<BarkRefreshToken | null>(null);
-
     const navigate = useNavigate();
 
-    const verifyToken = async () => {
+    const authenticationToken = useAuthenticationToken(barkClient, () => {
+        navigate('/loading');
+    });
 
-        const aToken = await barkClient.getAuthenticationToken();
-        const rToken = await barkClient.getRefreshToken();
-
-        if (!aToken || !rToken) {
-            navigate('/loading');
-            return;
-        }
-
-        setAuthenticationToken(aToken);
-        setRefreshToken(rToken);
-    };
-
-    React.useEffect(() => {
-        verifyToken();
-    }, []);
-
-    if (authenticationToken && refreshToken) {
-        return (<PhrasesContainer>
-            <Card
-                headerTitle={`Hello, ${authenticationToken.getAccountIdentifier()}`}
-                minWidth="min(512px, 100vw)"
-                maxWidth="768px"
-                noPadding
-                actions={<Button
-                    actionPrefix
-                    prefix={<HiOutlineLogout
-                        size={18}
-                    />}
-                    onClick={() => {
-                        barkClient.signOut();
-                    }}
-                >
-                    Sign Out
-                </Button>}
-            >
-            </Card>
-        </PhrasesContainer>);
+    if (authenticationToken.loading) {
+        return (<CenteredLayout>
+            <SpinnerRectangle />
+        </CenteredLayout>);
     }
 
     return (<PhrasesContainer>
-        Loading
+        <Card
+            headerTitle={`Hello, ${authenticationToken.token.getAccountIdentifier()}`}
+            minWidth="min(512px, 100vw)"
+            maxWidth="768px"
+            noPadding
+            actions={<Button
+                actionPrefix
+                prefix={<HiOutlineLogout
+                    size={18}
+                />}
+                onClick={() => {
+                    barkClient.signOut();
+                }}
+            >
+                Sign Out
+            </Button>}
+        >
+        </Card>
     </PhrasesContainer>);
 };

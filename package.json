@@ -11,6 +11,7 @@
         "@barksh/authentication-types": "^1.0.0",
         "@barksh/bark-design-react": "^1.8.3",
         "@barksh/client-authentication-browser": "^1.8.3",
+        "@barksh/client-authentication-react": "^1.0.0",
         "@barksh/token-browser": "^1.4.0",
         "@sudoo/locale": "^1.0.1",
         "@sudoo/magic": "^1.9.0",
