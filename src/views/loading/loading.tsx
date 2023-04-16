@@ -4,10 +4,10 @@
  * @description Loading
  */
 
+import { CenteredLayout, SpinnerRectangle } from "@barksh/bark-design-react";
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import { barkClient } from "../../util/bark-client";
-import { CenteredLayout, SpinnerRectangle } from "@barksh/bark-design-react";
 
 export const LoadingView: React.FC = () => {
 
@@ -29,7 +29,7 @@ export const LoadingView: React.FC = () => {
             );
 
             queryRegisterer.addSucceedAction(() => {
-                navigate('/visualizer');
+                navigate('/phrases');
             });
             queryRegisterer.addNeutralAction(() => {
                 navigate('/sign-in');
@@ -42,7 +42,7 @@ export const LoadingView: React.FC = () => {
         const verifyResult = token.verifyExpiration();
 
         if (verifyResult) {
-            navigate('/visualizer');
+            navigate('/phrases');
             return;
         } else {
             navigate('/sign-in');
