@@ -8,7 +8,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@barksh/authentication-types": "^1.0.0",
+        "@barksh/authentication-types": "^1.1.0",
         "@barksh/bark-design-react": "^1.9.0",
         "@barksh/client-authentication-browser": "^1.8.3",
         "@barksh/client-authentication-react": "^1.0.0",
@@ -16,18 +16,19 @@
         "@sudoo/locale": "^1.0.1",
         "@sudoo/magic": "^1.9.0",
         "@sudoo/react-force": "^2.0.0",
-        "connor": "^2.8.0",
-        "react-icons": "^4.8.0",
-        "react-router-dom": "^6.10.0",
-        "styled-components": "^5.3.9"
+        "connor": "^2.9.0",
+        "react-icons": "^4.11.0",
+        "react-router-dom": "^6.14.2",
+        "react-router-dom": "^6.17.0",
+        "styled-components": "^6.0.9"
     },
     "devDependencies": {
         "@sudoo/react-force-dev": "^2.0.0",
         "@sudoo/triforce": "^3.11.0",
-        "@types/styled-components": "^5.1.26",
-        "@vitejs/plugin-react": "^3.1.0",
+        "@types/styled-components": "^5.1.28",
+        "@vitejs/plugin-react": "^4.1.0",
         "ts-node": "^10.9.1",
-        "vite": "^4.2.1"
+        "vite": "^4.4.11"
     },
     "nyc": {
         "extension": [
