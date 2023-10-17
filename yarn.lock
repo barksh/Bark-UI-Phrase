@@ -276,10 +276,10 @@
   resolved "https://registry.yarnpkg.com/@barksh/authentication-types/-/authentication-types-1.1.0.tgz#d714f83948b69b183635a86a24ddcd303705faca"
   integrity sha512-qEpfYmnINrYmF/GW//PLPjSOdBYzB8KT3lHf9UN/PDwxztU8ZDWLX3jtSonZcH1Ju/djbZPYG/DewBfe9G6plQ==
 
-"@barksh/bark-design-react@^1.8.3":
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/@barksh/bark-design-react/-/bark-design-react-1.8.3.tgz#b8fac9c053560c521b410ff98568286f1eb5a44f"
-  integrity sha512-A73CEVV4ggV8bMQcmDhs2MVe79cuVsbfIMjofIZycDCkacSAVF+NmI9IPfufCB7cMbNxUmHvo7aKmeN+NLg1Nw==
+"@barksh/bark-design-react@^1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@barksh/bark-design-react/-/bark-design-react-1.9.0.tgz#f9e5c2f313b967c0b516db40d82fe1c927d0c832"
+  integrity sha512-KVDZRT7QL04kKKRkH4gbNH1bX8CQs1haHyPmM56wjHlw9tyZvTTCuG2h7/uk62n4D40hnRa87dLsO2Pmbqatzw==
   dependencies:
     "@sudoo/random" "^2.2.0"
     styled-components "^5.3.9"
@@ -308,10 +308,10 @@
     "@sudoo/url" "^1.6.1"
     connor "^2.8.0"
 
-"@barksh/token-browser@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@barksh/token-browser/-/token-browser-1.4.0.tgz#8138c2bb0e49bda44bbbe255e4c60edcbb99801b"
-  integrity sha512-QGafbmwXAaBaNotSwuTxpSpjukehGBaHKY2TaHkXZc6QI+p7oMsiA47h3nAwb98BuP5iFOL/8PPjnWyTlchwaA==
+"@barksh/token-browser@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@barksh/token-browser/-/token-browser-1.6.0.tgz#569c5b1e75039fa8e16870f89fd436a4d977bc61"
+  integrity sha512-wq60KM96AmR/OqKH4TjkGNgbm4vAbyiHrVGoMOScXJuB9rkmuq444SPuBLBUsa1uYwctYrf3LtehsY0VLnKlTw==
   dependencies:
     "@sudoo/jwt-web" "^3.2.0"
     connor "^2.8.0"
@@ -601,10 +601,10 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.4.tgz#cbfbec6735711e7c2fc93b9b40adf70ef5a39990"
   integrity sha512-gTL8H5USTAKOyVA4xczzDJnC3HMssdFa3tRlwBicXynx9XfiXwneHnYQogwSKpdCkjXISrEKSTtX62rLpNEVQg==
 
-"@remix-run/router@1.9.0":
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.9.0.tgz#9033238b41c4cbe1e961eccb3f79e2c588328cf6"
-  integrity sha512-bV63itrKBC0zdT27qYm6SDZHlkXwFL1xMBuhkn+X7l0+IIhNaH5wuuvZKp6eKhCD4KFhujhfhCT1YxXW6esUIA==
+"@remix-run/router@1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.10.0.tgz#e2170dc2049b06e65bbe883adad0e8ddf8291278"
+  integrity sha512-Lm+fYpMfZoEucJ7cMxgt4dYt8jLfbpwRCzAjm9UgSLOkmlqo9gupxt6YX3DY0Fk155NT9l17d/ydi+964uS9Lw==
 
 "@sudoo/buffer@^1.5.0":
   version "1.5.0"
@@ -3333,20 +3333,20 @@ react-router-dom@6.4.4:
     "@remix-run/router" "1.0.4"
     react-router "6.4.4"
 
-react-router-dom@^6.16.0:
-  version "6.16.0"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.16.0.tgz#86f24658da35eb66727e75ecbb1a029e33ee39d9"
-  integrity sha512-aTfBLv3mk/gaKLxgRDUPbPw+s4Y/O+ma3rEN1u8EgEpLpPe6gNjIsWt9rxushMHHMb7mSwxRGdGlGdvmFsyPIg==
+react-router-dom@^6.17.0:
+  version "6.17.0"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.17.0.tgz#ea73f89186546c1cf72b10fcb7356d874321b2ad"
+  integrity sha512-qWHkkbXQX+6li0COUUPKAUkxjNNqPJuiBd27dVwQGDNsuFBdMbrS6UZ0CLYc4CsbdLYTckn4oB4tGDuPZpPhaQ==
   dependencies:
-    "@remix-run/router" "1.9.0"
-    react-router "6.16.0"
+    "@remix-run/router" "1.10.0"
+    react-router "6.17.0"
 
-react-router@6.16.0:
-  version "6.16.0"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.16.0.tgz#abbf3d5bdc9c108c9b822a18be10ee004096fb81"
-  integrity sha512-VT4Mmc4jj5YyjpOi5jOf0I+TYzGpvzERy4ckNSvSh2RArv8LLoCxlsZ2D+tc7zgjxcY34oTz2hZaeX5RVprKqA==
+react-router@6.17.0:
+  version "6.17.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.17.0.tgz#7b680c4cefbc425b57537eb9c73bedecbdc67c1e"
+  integrity sha512-YJR3OTJzi3zhqeJYADHANCGPUu9J+6fT5GLv82UWRGSxu6oJYCKVmxUcaBQuGm9udpWmPsvpme/CdHumqgsoaA==
   dependencies:
-    "@remix-run/router" "1.9.0"
+    "@remix-run/router" "1.10.0"
 
 react-router@6.4.4:
   version "6.4.4"
